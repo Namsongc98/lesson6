@@ -4,7 +4,7 @@
 }
 .header {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   padding: 15px 24px;
   height: 80px;
   border-bottom: 1px solid #f3f3f4;
@@ -155,6 +155,9 @@
   width: 81%;
   margin: 0 20px;
 }
+.wapper-section {
+  margin: 20px;
+}
 .main-wapper__comback {
   height: 50px;
   line-height: 50px;
@@ -170,7 +173,8 @@
 }
 .main {
   border-radius: 12px;
-  padding: 20px;
+  padding-bottom:10px ;
+  margin-bottom: 20px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15), -2px -2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -188,6 +192,9 @@
 .main-img {
   display: block;
   margin: 26px auto;
+}
+.section-wapper {
+  margin: 20px;
 }
 
 .section-title {
@@ -213,16 +220,27 @@
   font-weight: 500;
 }
 .section-main__input {
-  border: 1px solid #f3f3f4;
   width: 520px;
+  margin: 12px auto 20px auto;
+  
+}
+.main__input {
+  border: 1px solid #f3f3f4;
+  padding: 16px;
   height: 56px;
   outline: none;
-  padding: 16px;
   border-radius: 12px;
-  margin: 12px auto 20px auto;
+}
+.eva-main__input {
+  width: 98%;
+  margin: 20px 20px 20px 0;
+  
 }
 .section-title__img {
   margin-right: 12px;
+}
+.section-Eva__main {
+  padding-top: 20px;
 }
 .section-main__drop {
   position: relative;
@@ -232,9 +250,160 @@
   display: block;
   margin: 20px auto;
 }
-.Evaluate {
-  margin-top: 26px;
-}
+
 .section-Evaluate {
+  border-radius: 8px;
+  margin-top: 18px;
+  background-color: #f7f7f7;
   padding: 20px;
+}
+.section-Eva__poin {
+  margin-right: 4px;
+  position: relative;
+  bottom: 4px;
+}
+.section-Eva__wp {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.section-Eva__row {
+  height: 64px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.eva-number,
+.eva-input {
+  display: flex;
+  justify-content: flex-end;
+}
+.eva-number__items {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 20px 30px 8px 30px;
+  text-align: center;
+  line-height: 24px;
+}
+.eva-input {
+  background-color: white;
+  border-radius: 16px;
+  padding: 10px, 46px, 10px, 10px;
+  height: 64px;
+}
+.eva-input__label {
+  text-align: center;
+  line-height: 64px;
+}
+.eva-input__list {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 20px 30px;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid #00833e;
+}
+.eva-input__list:checked::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-image: url(./img/tick__V.svg);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.btn-opin {
+  width: 100%;
+}
+.opinion {
+  width: 100%;
+  height: 136px;
+  background-color: #f7f7f7;
+  padding: 20px auto;
+}
+.section-main__label {
+  margin-right: 20px;
+}
+.propose_Wp {
+  width: 100%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+.propose__title {
+  margin: 10px;
+}
+.propose__input {
+  appearance: none;
+
+  width: 24px;
+  height: 24px;
+  border: 1px solid #00833e;
+  border-radius: 50%;
+}
+.propose__input:checked::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1px;
+  border: 1px solid #00833e;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url(./img/tick__V.svg);
+}
+.propose__input-Wp {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.propose__label {
+  margin-left: 20px;
+}
+.propose__input-text {
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  outline: none;
+  margin-left: 12px;
+  background-color: #f7f7f7;
+  flex: 1;
+}
+.eva-end{
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto;
+}
+.eva-end__submit{
+  width: 162px;
+  height: 40px;
+  border-radius: 24px;
+ 
+}
+.btn-eva{
+  width: 162px;
+  height: 40px;
+  border-radius: 24px;
+  border:2px solid #00833e;
+  background-color: white;
+  color: #00833e;
+}
+.btn-eva:hover{ 
+  background-color: #00833e;
+  color: white;
+  cursor: pointer;
+}
+.eva-end__right{
+  display: flex;
+  justify-content: space-between;
+
+}
+.eva-end__comback{
+    margin-right:20px ;
 }
